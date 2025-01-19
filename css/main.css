@@ -19,3 +19,39 @@
     font-family: outfit-c;
     src: url('../fonts/outfit-regular.woff2');
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: outfit-c;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-size: 50px;
+    color: #fafafa;
+    font-family: raleway-c;
+    overflow: hidden;
+}
+
+.hero {
+    width: calc(var(--index) * 36);
+    position: absolute;
+    left: 37vw;
+    top: 8vh;
+}
+
+.container {
+    padding: 0 7vw;
+}
+
+.main-title {
+    font-size: calc(var(--index) * 8);
+    position: absolute;
+    width: min-content;
+    bottom: 12vh;
+    line-height: 0.9;
+}
