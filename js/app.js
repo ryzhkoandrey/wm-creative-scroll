@@ -10,7 +10,7 @@ if (ScrollTrigger.isTouch !== 1) {
     });
 
     gsap.fromTo('.hero-section', {
-        opacity: 1
+        opacity: 1,
     }, {
         opacity: 0,
         scrollTrigger: {
@@ -19,5 +19,21 @@ if (ScrollTrigger.isTouch !== 1) {
             end: '820',
             scrub: true
         }
+    });
+
+    let itemsL = gsap.utils.toArray('.gallery__left .gallery__item');
+
+    itemsL.forEach(item => {
+        gsap.fromTo(item, {
+            x: -500,
+            opacity: 0,
+        }, {
+            x: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: item,
+                scrub: true,
+            }
+        });
     });
 }
