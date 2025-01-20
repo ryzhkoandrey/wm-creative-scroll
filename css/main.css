@@ -30,6 +30,15 @@ h6 {
     font-family: outfit-c;
 }
 
+/* will-change */
+
+.content,
+.hero,
+.main-header,
+.gallery > * {
+    will-change: transform;
+}
+
 body {
     background-image: url('../img/bg.jpg');
     background-size: 50px;
