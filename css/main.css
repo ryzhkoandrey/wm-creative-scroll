@@ -34,7 +34,7 @@ body {
     background-size: 50px;
     color: #fafafa;
     font-family: raleway-c;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -42,6 +42,11 @@ body {
     position: absolute;
     left: 37vw;
     top: 8vh;
+    z-index: -1;
+}
+
+.main-header {
+    height: 100vh;
 }
 
 .container {
@@ -54,4 +59,15 @@ body {
     width: min-content;
     bottom: 12vh;
     line-height: 0.9;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
