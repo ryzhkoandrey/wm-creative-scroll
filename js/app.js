@@ -36,4 +36,21 @@ if (ScrollTrigger.isTouch !== 1) {
             }
         });
     });
+
+    let itemsR = gsap.utils.toArray('.gallery__right .gallery__item');
+
+    itemsR.forEach(item => {
+        gsap.fromTo(item, {
+            x: 500,
+            opacity: 0,
+        }, {
+            x: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: item,
+                scrub: true,
+            }
+        });
+    });
+
 }
